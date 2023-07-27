@@ -11,52 +11,37 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<div>
-  
-  <div class="navbar bg-base-100 block lg:hidden">
-      <div class="flex-none">
-      <button class="btn btn-square btn-ghost">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-      </button> 
+  <nav class="flex md:flex-row justify-evenly items-center bg-[#F85559] md:rounded-full p-4 mb-4 z-10">
+    <ul class="md:flex hidden md:flex-row gap-4 text-xl text-white font-semibold ">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">All Fruits</a></li>
+    </ul>
+    <div class="flex md:flex-row gap-4 justify-center items-center">
+        <img src="images/logo.png" alt="">
+        <h1 class="text-4xl font-bold text-white">Fruit Burst</h1>
     </div>
-    <div class="flex-1">
-      <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <div class=" bg-white text-black px-12 py-4 rounded-full hidden md:block">
+        <input class="outline-none  rounded-lg" type="text" placeholder="Search here"  >
+        <button> <i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
-    <div class="flex">
-      <button class="btn btn-square btn-ghost">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-      </button>
-    <div class="flex-none">
-      <button class="btn btn-square btn-ghost">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
-      </button>
-    </div>
-  </div>
 
-
-
-
-
-  <div class="hidden lg:block navbar bg-red-400">
-        <div class="text-white ">
-        <ul class="flex gap-7">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Shop</a></li>
-            <li><a href="">All fruit</a></li>
-        </ul>
+    <button class="block md:hidden py-3 px-3 mx-2 rounded focus:outline-none hover:bg-gray-200 group">
+        <div class="w-5 h-1 bg-gray-600 mb-1"></div>
+        <div class="w-5 h-1 bg-gray-600 mb-1"></div>
+        <div class="w-5 h-1 bg-gray-600"></div>
+        <div class="absolute top-24 right-0 w-full h-screen  bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300 ">
+            <ul class="flex flex-col justify-center items-center bg-[#F85559] text-white font-bold  w-full  text-base cursor-pointer md:pl-10">
+                <li class="hover:bg-gray-200 py-4 px-6 w-full"> Home</li>
+                <li class="hover:bg-gray-200 py-4 px-6 w-full"> About us</li>
+                <li class="hover:bg-gray-200 py-4 px-6 w-full"> Support</li>
+                <li class="hover:bg-gray-200 py-4 px-6 w-full"> Contact</li>
+            </ul>
         </div>
-        <div class="flex-1 justify-center mr-40">
-<img src="images/logo.png" alt="">
-          <a class="btn btn-ghost normal-case text-5xl text-center text-white">Fruit Burst</a>
-        </div>
-        <div class="flex justify-end -my-5">
-          <div class="form-control flex">
-            <input type="text" placeholder="Search" class="input input-bordered w-24 rounded-box md:w-auto" />
-            <div><i class="fa-light fa-magnifying-glass"></i></div>
-          </div>
-        </div>
-      </div>
+    </button>
+</nav>
+
       <main>
         <section>
          <!-- banner section starts here  -->
